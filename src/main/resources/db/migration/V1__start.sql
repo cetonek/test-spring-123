@@ -1,0 +1,6 @@
+CREATE TABLE ticket
+(
+    id BIGSERIAL PRIMARY KEY,
+    version BIGINT NOT NULL,
+    created_at TIMESTAMP NOT NULL
+);
