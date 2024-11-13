@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 public class TicketDomain {
 
-  private long id;
+  private long number;
 
   private LocalDateTime created;
 
@@ -14,17 +14,17 @@ public class TicketDomain {
 
   public static TicketDomain from(Ticket ticket, long order) {
     return new TicketDomain()
-      .setId(ticket.getId())
+      .setNumber(ticket.getId())
       .setCreated(ticket.getCreatedAt())
       .setOrder(order);
   }
 
-  public long getId() {
-    return id;
+  public long getNumber() {
+    return number;
   }
 
-  public TicketDomain setId(long id) {
-    this.id = id;
+  public TicketDomain setNumber(long number) {
+    this.number = number;
     return this;
   }
 
